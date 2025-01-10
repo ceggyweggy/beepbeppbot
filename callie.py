@@ -12,9 +12,9 @@ from openpyxl import load_workbook
 callie_events = load_workbook('callie_events.xlsx')
 events = callie_events['Events']
 
-admin = 861886075
+admin = INSERT_ID
 
-updater = Updater(token='1956703821:AAES5YIGdS8vi6bWMrVWvlixw44PAY4Axvg', use_context=True)
+updater = Updater(token='INSERT_TOKEN', use_context=True)
 dispatcher = updater.dispatcher
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
